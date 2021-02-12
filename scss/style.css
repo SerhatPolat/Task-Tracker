@@ -1,0 +1,70 @@
+@charset "UTF-8";
+* {
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+body {
+  background-image: url(backgroundphoto.jpg);
+  height: 100vh;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: #833ab4;
+  background: linear-gradient(160deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  width: 90%;
+}
+
+.container h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.container h2 {
+  font-size: 15px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.container p:before {
+  content: "• ";
+}
+
+#addTask {
+  background-color: black;
+  color: white;
+  outline: none;
+  border-radius: 10px;
+}
+
+#addTask:hover {
+  background-color: white;
+  color: black;
+}
+
+#addTask:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+::-moz-selection {
+  background-color: #908c91;
+}
+
+::selection {
+  background-color: #908c91;
+}
+
+#newTaskInput {
+  border-radius: 10px;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

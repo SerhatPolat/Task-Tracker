@@ -1,0 +1,66 @@
+$color1: black;
+$color2: white;
+
+* {
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+body {
+    background-image: url(backgroundphoto.jpg);
+    height: 100vh;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(131,58,180);
+    background: linear-gradient(160deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: 90%;
+
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    
+    h2 {
+        font-size: 15px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    p:before {
+        content:"• ";
+    }
+
+}
+
+#addTask {
+    background-color: $color1;
+    color: $color2;
+    outline: none;
+    border-radius: 10px;
+}
+
+#addTask:hover {
+    background-color: $color2;
+    color: $color1;
+}
+
+#addTask:active {
+    transform: scale(1.2);
+}
+
+::selection {
+    background-color: #908c91;
+}
+
+#newTaskInput {
+    border-radius: 10px;
+    outline: none;
+}
